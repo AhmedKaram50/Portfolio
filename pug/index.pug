@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Vector
+        //--- Includes Style Sheets
+        include ../includes/styles.pug
+        //--- Includes Style Sheets
+    body
+     //========= Start Header ============
+     header
+      nav(class="navbar navbar-expand-lg navbar-light")
+       .container
+        a(class="navbar-brand" href="#")
+         img(src="images/logo.png")
+        button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation")
+         span(class="navbar-toggler-icon")
+        div(class="collapse navbar-collapse" id="navbarNav")
+         ul(class="navbar-nav ml-auto")
+          li(class="nav-item active")
+           a(class="nav-link" href="#") Home
+          li(class="nav-item")
+           a(class="nav-link" href="#") About
+          li(class="nav-item")
+           a(class="nav-link" href="#") Services
+          li(class="nav-item")
+           a(class="nav-link" href="#") Portfolio
+          li(class="nav-item")
+           a(class="nav-link" href="#") Pages
+          li(class="nav-item")
+           a(class="nav-link" href="#") Blog
+          li(class="nav-item")
+           a(class="nav-link" href="#") Contact
+     //========= End Header ============
+     //========= Start intro Section ============
+     section(class="intro")
+      .container
+       div(class="row justify-content-center align-items-center no-gutters")
+        div(class="introduction col-lg-6 col-sm-12")
+         h4 Hey
+         h1 I Am Ahmed
+         h2 Programer & Web Developer
+         div(class="intro-btns")
+          button(class="btn btn-small btn-gradient") Hire Me
+          button(class="btn btn-small btn-white") Get Cv
+        div(class="intro-img col-lg-6 col-sm-12")
+         img(src="images/banner/banner-image.png")
+     //========= End intro Section ============
+     //========= Start About Section ============
+     section(class="about")
+      .container
+       div(class="row justify-content align-items-center")
+        div(class="about-img col-lg-6")
+         img(src="images/about-us.png")
+        div(class="about-info col-lg-6")
+         h1 LET ME INTRODUCE MYSELF
+         p(class="paragraph") Lorem ipsum dolor sit amet consectetur adipisicing elit. Error rerum iure obcaecati vel possimus officia maiores perferendis ut! Quos, perspiciatis.
+         p(class="paragraph") It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here
+         button(class="btn btn-small btn-gradient") Download Cv
+     //========== End About Section ============
+     //========== Start Brand Section ============
+     section(class="brands")
+      .container
+       div(class="row justify-content-center")
+        div(class="brands-logo col-lg-6 col-md-12 col-sm-12")
+         div(class="row justify-content-center")
+          div(class="brand-img col-lg-4 col-md-6 col-sm-6 col-xs-6")
+           div(class="img-holder")
+            img(src="images/brands/logo1.png")
+          div(class="brand-img col-lg-4 col-md-6 col-sm-6 col-xs-6")
+           div(class="img-holder")
+            img(src="images/brands/logo2.png")
+          div(class="brand-img col-lg-4 col-md-6 col-sm-6 col-xs-6")
+           div(class="img-holder")
+            img(src="images/brands/logo3.png")
+          div(class="brand-img col-lg-4 col-md-6 col-sm-6 col-xs-6")
+           div(class="img-holder")
+            img(src="images/brands/logo4.png")
+          div(class="brand-img col-lg-4 col-md-6 col-sm-6 col-xs-6")
+           div(class="img-holder")
+            img(src="images/brands/logo5.png")
+          div(class="brand-img col-lg-4 col-md-6 col-sm-6 col-xs-6")
+           div(class="img-holder")
+            img(src="images/brands/logo6.png")
+          div(class="brand-img col-lg-4 col-md-6 col-sm-6 col-xs-6")
+           div(class="img-holder")
+            img(src="images/brands/logo7.png")
+          div(class="brand-img col-lg-4 col-md-6 col-sm-6 col-xs-6")
+           div(class="img-holder")
+            img(src="images/brands/logo8.png")
+          div(class="brand-img col-lg-4 col-md-6 col-sm-6 col-xs-6")
+           div(class="img-holder")
+            img(src="images/brands/logo9.png")
+        div(class="brands-info col-lg-6 col-md-12 col-sm-12")
+         div(class="year")
+          div(class="dots")
+          span 10
+          h2 Years Experience Working
+         div(class="call d-flex justify-content-center")
+          div(class="number")
+           a(href="https://www.facebook.com/ahmead.vector" class="h3") Call Now
+           p (+20)1212895904
+          div(class="phone-icon")
+           i(class="fas fa-phone fa-3x")
+     //========== End Brand Section ============
+     //========== Start Services Section ============
+     //-------- Includes The Mixin File-------
+     include ../pug/mixin.pug
+     //-------- Includes The Mixin File-------
+     section(class="services text-center")
+      .container
+       div(class="services-heading")
+        h1 Services Offers
+        p There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour
+       div(class="row")
+         +features('s1', 'Web Devoloper', 'Some quick example text to build on the card title and make up the bulk of the card')
+         +features('s2', 'UI/Ux Design', 'Some quick example text to build on the card title and make up the bulk of the card')
+         +features('s3', 'Web Design', 'Some quick example text to build on the card title and make up the bulk of the card')
+         +features('s4', 'Seo Optimize', 'Some quick example text to build on the card title and make up the bulk of the card')
+     //========== End Services Section ============
+     //========== Start Gallery Section ============
+     section(class="gallery")
+      .container
+       div(class="gallery-heading")
+        h1 Recently Done Project Quality Work
+       div(class="button-group")
+         button(type="button" class="active" id="btn1" data-filter=".all") All
+         button(type="button" data-filter=".popular") Popular
+         button(type="button" data-filter=".latest") Latest
+         button(type="button" data-filter=".following") Following
+         button(type="button" data-filter=".upcoming") Upcomming
+       div(class="row grid")
+        div(class="gallery-box col-lg-4 col-md-6 col-sm-12 grid-item all popular")
+         div(class="gallery-img")
+          img(src="images/portfolio/p1.jpg")
+         div(class="gallery-info")
+          h3 MINIMUL DESING
+          p Latest, Portfolio
+        div(class="gallery-box col-lg-4 col-md-6 col-sm-12 grid-item all upcoming")
+         a(class="gallery-img test-popup-link")
+          img(src="images/portfolio/p2.jpg")
+         div(class="gallery-info")
+          h3 MINIMUL DESING
+          p Latest, Portfolio
+        div(class="gallery-box col-lg-4 col-md-6 col-sm-12 grid-item all popular")
+         a(class="gallery-img test-popup-link")
+          img(src="images/portfolio/p3.jpg")
+         div(class="gallery-info")
+          h3 MINIMUL DESING
+          p Latest, Portfolio
+        div(class="gallery-box col-lg-4 col-md-6 col-sm-12 grid-item all upcoming")
+         a(class="gallery-img test-popup-link")
+          img(src="images/portfolio/p4.jpg")
+         div(class="gallery-info")
+          h3 MINIMUL DESING
+          p Latest, Portfolio
+        div(class="gallery-box col-lg-4 col-md-6 col-sm-12 grid-item all following")
+         a(class="gallery-img test-popup-link")
+          img(src="images/portfolio/p5.jpg")
+         div(class="gallery-info")
+          h3 MINIMUL DESING
+          p Latest, Portfolio
+        div(class="gallery-box col-lg-4 col-md-6 col-sm-12 grid-item all latest following")
+         a(class="gallery-img test-popup-link")
+          img(src="images/portfolio/p6.jpg")
+         div(class="gallery-info")
+          h3 MINIMUL DESING
+          p Latest, Portfolio
+        div(class="gallery-box col-lg-4 col-md-6 col-sm-12 grid-item all following latest")
+         a(class="gallery-img test-popup-link")
+          img(src="images/portfolio/p7.jpg")
+         div(class="gallery-info")
+          h3 MINIMUL DESING
+          p Latest, Portfolio
+        div(class="gallery-box col-lg-4 col-md-6 col-sm-12 grid-item all following upcomong")
+         a(class="gallery-img test-popup-link")
+          img(src="images/portfolio/p8.jpg")
+         div(class="gallery-info")
+          h3 MINIMUL DESING
+          p Latest, Portfolio
+        div(class="gallery-box col-lg-4 col-md-6 col-sm-12 grid-item all upcomong latest")
+         a(class="gallery-img test-popup-link")
+          img(src="images/portfolio/p9.jpg")
+         div(class="gallery-info")
+          h3 MINIMUL DESING
+          p Latest, Portfolio
+     //========== End Gallery Section ============
+     //========== Start About us Section ============
+     section(class="about-us")
+      .container
+       div(class="about-us-heading text-center")
+        h1 Clint Say About Me
+        p(class="paragraph") Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, deleniti recusandae. Esse incidunt rem repellendus ab voluptates maxime? Nemo, numquam!
+       div(class="row justify-content-center align-items-center")
+        div(class="glide" id="intro")
+         div(data-glide-el="track" class="glide__track")
+          div(class="glide__slides")
+           div(class="about-us-box glide__slide")
+            div(class="card mb-3" style="max-width: 500px;")
+             div(class="row no-gutters")
+              div(class="col-md-4")
+               img(src="images/testimonials/t1.jpg")
+              div(class="col-md-8")
+               div(class="card-body")
+                h5(class="card-title") Ahmed Vector
+                p(class="card-text paragraph") Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem architecto consequuntur ratione, obcaecati corrupti deserunt.
+           div(class="about-us-box glide__slide")
+            div(class="card mb-3" style="max-width: 500px;")
+             div(class="row no-gutters")
+              div(class="col-md-4")
+               img(src="images/testimonials/t2.jpg")
+              div(class="col-md-8")
+               div(class="card-body")
+                h5(class="card-title") Ahmed Vector
+                p(class="card-text paragraph") Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem architecto consequuntur ratione, obcaecati corrupti deserunt.
+           div(class="about-us-box glide__slide")
+            div(class="card mb-3" style="max-width: 500px;")
+             div(class="row no-gutters")
+              div(class="col-md-4")
+               img(src="images/testimonials/t3.jpg")
+              div(class="col-md-8")
+               div(class="card-body")
+                h5(class="card-title") Ahmed Vector
+                p(class="card-text paragraph") Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem architecto consequuntur ratione, obcaecati corrupti deserunt.
+           div(class="about-us-box glide__slide")
+            div(class="card mb-3" style="max-width: 500px;")
+             div(class="row no-gutters")
+              div(class="col-md-4")
+               img(src="images/testimonials/t4.jpg")
+              div(class="col-md-8")
+               div(class="card-body")
+                h5(class="card-title") Ahmed Vector
+                p(class="card-text paragraph") Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem architecto consequuntur ratione, obcaecati corrupti deserunt.
+     //========== End About us Section ============
+     //==========Start subscribe Section ============
+     section(class="subscribe text-white")
+      div(class="container")
+       div(class="subscribe-box text-center")
+        h1 get update from any wheare
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, consequuntur.
+        div(class="subscribe-form form-group row justify-content-center")
+         input(type="text" placeholder="Email" class="form-control form-control-lg col-lg-4" id="colFormLabelSm")
+         button(class="btn-small") Subscribe
+     //========== End subscribe Section ============
+     //========== Start Footer ============
+     footer
+      .container
+       div(class="footer-box text-center")
+        img(src="images/logo.png")
+        h4 Follow Me
+        div(class="row justify-content-center")
+         div(class="icons")
+          i(class="fab fa-facebook-f")
+          i(class="fab fa-instagram")
+          i(class="fab fa-youtube")
+          i(class="fab fa-twitter")
+        h6 Copyright ©2020 All rights reserved | This template is made by 
+         span Ahmed Karam
+          i(class="fas fa-heart")
+     //========== End Footer ============
+     script(src="js/jquery-3.3.1.min.js")
+     script(src="js/bootstrap4.min.js")
+     script(src="js/glide.min.js")
+     script(src="js/isotope.min.js")
+     script(src="js/vector.js")
+     

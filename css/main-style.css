@@ -1,0 +1,380 @@
+                                                            /*
+                                                                Vector Training Website 
+                                                                By Bootstrap - Pug.js
+                                                                Start : 14/1/2020 (First One At 2020)
+                                                                End : -/-/-
+                                                                Codes:
+                                                                Version: 1.0v
+                                                            */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Roboto+Slab&display=swap');                                                            
+/*==================================================*/
+body{
+    height: 5000px
+}
+/*==================================================*/
+/*========================Start Header==========================*/
+header nav .collapse ul.navbar-nav li{
+    padding: 12px
+}
+
+header nav .collapse ul.navbar-nav li a{
+    font-family: var(--first-font);
+    font-size: 18px;
+}
+
+header nav .collapse ul.navbar-nav li.active a,
+header nav .collapse ul.navbar-nav li a:hover{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+/*========================End Header==========================*/
+/*========================Start Intro==========================*/
+.intro{
+    background: url(../images/banner/home-banner.png);
+    background-position: 76px -100px;
+}
+
+.intro .introduction h4{
+    font-size: 50px;
+    font-family: var(--third-font);
+    font-style: italic;
+    position: relative;
+}
+
+.intro .introduction h4:before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 110px;
+    height: 2px;
+    width: 250px;
+    background: #000;
+}
+
+.intro .introduction h1{
+    font-size: 75px;
+    width: 65%;
+    font-family: var(--third-font);
+    letter-spacing: 5px;
+    font-weight: bold
+}
+
+.intro .introduction h2{
+    font-family: var(--first-font);
+    font-size: 28px;
+    font-weight: bold
+}
+
+.intro .introduction .intro-btns{
+    margin: 50px 0
+}
+
+.intro .introduction .intro-btns button{
+    margin-right: 20px;
+} 
+
+.intro .intro-img img{
+    width: 100%;
+    padding-top: 100px;
+}
+/*========================End Intro==========================*/
+/*========================Start About Section==========================*/
+.about .about-img img{
+    width: 100%
+}
+
+.about .about-info{
+    text-align: 
+}
+
+.about .about-info h1{
+    font-size: 60px;
+    font-family: var(--first-font);
+    letter-spacing: 15px;
+    font-weight: bold;
+    margin: 40px 0
+}
+
+.about .about-info p{
+    width: 90%
+}
+
+.about .about-info button{
+    margin-top: 30px
+}
+/*========================End About Section==========================*/
+/*========================Start Brand Section==========================*/
+.brands{
+    padding: 100px 0;
+}
+
+.brands .brands-logo .brand-img{
+    text-align: center;
+    padding: 15px 0;
+    cursor: pointer;
+}
+
+.brands .brands-logo .brand-img img{
+    width: 70%
+}
+
+.brands .brands-logo .brand-img .img-holder{
+    border: 1px solid var(--border-color);
+    width: 165px;
+    height: 100px;
+    padding: 30px;
+    filter: brightness(1);
+    transition: all 0.3s ease-in-out;
+    margin: 0 auto
+}
+
+.brands .brands-logo .brand-img .img-holder:hover{
+    filter: brightness(0);
+    box-shadow: var(--box-shadow);
+    transform: scale(1.1)
+}
+
+.brands .brands-info{
+    text-align: center;
+}
+
+.brands .brands-info .year span{
+    font-size: 90px;
+    font-weight: bold;
+    color: #854fee;
+    position: relative
+}
+
+.brands .brands-info .year h2{
+    font-size: 26px;
+    display: inline-block;
+    width: 35%;
+    margin-left: 15px;
+    text-align: left
+}
+
+.brands .brands-info .year .dots{
+    background: url(../images/client-info-bg.png) 13px no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+}
+
+.brands .brands-info .call{
+    margin-top: 120px;
+    flex-direction: row-reverse;
+}
+
+.brands .brands-info .call .number a{
+    font-weight: normal
+}
+
+.brands .brands-info .call .number p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.brands .brands-info .call .phone-icon i{
+    transform: rotate(90deg);
+    margin: 10px 15px 0 0
+}
+
+.col-xs-6{
+    width: 50% !important
+}
+/*========================End Brand Section==========================*/
+/*========================Start Services Section==========================*/
+.services{
+    padding: 40px 140px;
+}
+
+.services .services-heading h1{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: var(--third-font);
+}
+
+.services .services-heading p{
+    color: var(--text-color);
+    font-size: 16px;
+    font-family: var(--third-font);
+    margin: 20px 0 100px 0;
+}
+
+.services .featur-box{
+    background: rgba(248, 252, 253, 0.973);
+    padding: 40px 30px;
+    transition: all 0.3s ease-in-out
+}
+
+.services .featur-box:hover{
+    box-shadow: var(--box-shadow);
+}
+
+.services .featur-box .feature-info h4{
+    font-family: var(--third-font);
+    margin: 24px 0 15px 0;
+}
+/*========================End Services Section==========================*/
+/*========================Start Gallery Section==========================*/
+/*========================Start Gallery Section==========================*/
+.gallery{
+    padding: 60px 0
+}
+
+.gallery .gallery-heading h1{
+    font-size: 50px;
+    width: 60%;
+    font-family: var(--first-font);
+}
+
+.gallery .button-group{
+    margin: 30px 0
+}
+
+.gallery .button-group button{
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: var(--third-font);
+    padding: 20px
+}
+
+.gallery .gallery-box .gallery-info h3{
+    font-size: 26px;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+    font-family: var(--third-font);
+}
+
+.gallery .gallery-box .gallery-info p{
+    color: var(--text-color)
+}
+
+.gallery .gallery-box .gallery-img img{
+    width: 100%;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.gallery .gallery-box .gallery-img img:hover{
+    box-shadow: var(--box-shadow);
+    filter: brightness(1.1)
+}
+/*========================End Gallery Section==========================*/
+.about-us{
+    padding: 70px 0;
+}
+
+.about-us .about-us-heading h1{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: var(--third-font);
+}
+
+.about-us .about-us-heading p{
+    padding: 0 70px
+}
+
+.about-us .glide .glide__slides .about-us-box .card{
+    border: none;
+    box-shadow: var(--box-shadow);
+    margin-top: 80px;
+}
+
+.about-us .glide .glide__slides .about-us-box .card img{
+    width: 100%;
+    padding: 30px
+}
+
+.about-us .glide .glide__slides .about-us-box .card .card-body p{
+    font-size: 13px
+}
+/*========================End Abut Us Section==========================*/
+/*========================Start Subscribe Section==========================*/
+.subscribe{
+    padding: 80px 0
+}
+
+.subscribe .subscribe-box{
+    padding: 140px 0;
+    background: url(../images/subscribe-bg.png);
+    border-radius: 5px
+}
+
+.subscribe .subscribe-box h1{
+    font-size: 45px;
+    font-weight: bold;
+    font-family: var(--third-font);
+}
+
+.subscribe .subscribe-box p{
+    font-family: var(--first-font);
+    margin: 25px 0 60px 0 
+}
+
+.subscribe .subscribe-box .subscribe-form input{
+    background: transparent;
+    margin-right: 30px;
+    color: #fff !important
+}
+
+.subscribe .subscribe-box .subscribe-form input::placeholder{
+    color: #fff;
+    font-family: var(--third-font)
+}
+
+.subscribe .subscribe-box .subscribe-form button{
+    padding: 8px 20px;;
+    border-radius: 5px;
+    outline: none;
+    background-color: #fff;
+
+}
+/*========================End Subscribe Section==========================*/
+/*========================Start Footer==========================*/
+footer{
+    padding: 100px 0
+}
+
+footer .footer-box h4{
+    font-family: var(--first-font);
+    font-size: 28px;
+    margin: 40px;
+}
+
+footer .footer-box .icons i{
+    font-size: 22px;
+    cursor: pointer;
+    padding: 0 20px;
+    transition: all 0.3s ease-in-out;
+    filter: brightness(5);
+}
+
+footer .footer-box .icons i:hover{
+    color: #3b5598;
+    filter: brightness(1);
+}
+
+footer .footer-box h6{
+    margin-top: 40px;
+    color: var(--text-color)
+}
+
+footer .footer-box h6 span{
+    color: darkblue;
+    cursor: pointer;
+}
+
+footer .footer-box h6 span i{
+    color: #d9322a;
+    margin-left: 5px
+}
+/*========================End Footer==========================*/

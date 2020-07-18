@@ -1,0 +1,66 @@
+@media(max-width: 1200px ){
+    .services {
+        padding: 40px 80px;
+    }
+}
+@media(max-width: 992px ){
+    .intro .introduction{
+        margin-top: 60px
+    }
+    header nav .collapse ul.navbar-nav li{
+        text-align: center
+    }
+    .brands .brands-info{
+        margin-top: 80px
+    }
+    .gallery .gallery-heading h1{
+        font-size: 40px;
+        width: 100%
+    }
+    .gallery .button-group button{
+        font-size: 18px;
+        padding: 8px
+    }
+}
+@media(max-width: 576px ){
+    .intro .introduction {
+        text-align: center
+    }
+    .intro .introduction h4{
+        font-size: 40px
+    }
+    .intro .introduction h4::before{
+        display: none
+    }
+    .intro .introduction h1{
+        font-size: 60px;
+        margin: 20px 0;
+        width: 100%
+    }
+    .intro .introduction h2{
+        font-size: 24px
+    }
+    .intro .intro-img{
+        padding: 
+    }
+    .intro .intro-img img{
+        padding: 0
+    }
+    .about .about-info h1{
+        font-size: 40px;
+    }
+    .about .about-info p{
+        width: 100%;
+        font-size: 15px
+    }
+    .services{
+        padding: 40px 0px;
+    }
+    .about-us .about-us-heading p{
+        padding: 0 0px;
+        font-size: 14px;
+    }
+    .about-us .about-us-heading h1{
+        font-size: 46px
+    }
+}

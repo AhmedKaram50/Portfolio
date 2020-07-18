@@ -1,0 +1,58 @@
+/*================================BUTTONS======================================*/
+.btn-small{
+    font-family: var(--first-font);
+    font-size: 22px;
+    padding: 8px 30px;
+    border: 1.5px solid #7f50ec;
+    transition: background 0.5s ease-in-out;
+    position: relative
+}
+
+.btn-gradient{
+    background: var(--gradient-color);
+    color: #fff;
+}
+
+.btn-white{
+    background: none;
+    color: #000;
+}
+
+.btn-white:after,
+.btn-gradient:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--gradient-color);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0
+}
+
+.btn-gradient:after{
+    background: none
+}
+
+.btn-white:hover{
+    color: #fff
+}
+
+.btn-white:hover::after{
+    opacity: 1;
+    transition: all 0.5s ease
+}
+
+.btn-gradient:hover{
+    background: none;
+    color: #000;
+}
+/*================================BUTTONS======================================*/
+/*================================Text======================================*/
+.paragraph{
+    color: var(--text-color);
+    font-weight: 500;
+    line-height: 25px;
+}
+/*================================Text======================================*/
